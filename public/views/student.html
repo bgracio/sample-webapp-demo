@@ -1,0 +1,27 @@
+<h2>{{ getTitle() }}</h2>
+
+<br/>
+
+<form>
+    <label for="student_id">Id:</label><br>
+    <input type="text" id="student_id" name="student_id" ng-model="student._id" value="{{ student._id }}"><br>
+
+    <label for="student_name">Name:</label><br>
+    <input type="text" id="student_name" name="student_name" ng-model="student.name" value="{{ student.name }}"><br>
+
+    <label for="student_country">Country:</label><br>
+    <input type="text" id="student_country" name="student_country" ng-model="student.country" value="{{ student.country }}"><br>
+
+    <label for="student_active">Active:</label><br>
+    <input type="checkbox" id="student_active" name="student_active" ng-model="student.active" value="{{ student.active }}"><br>
+
+    <label for="student_age">Age:</label><br>
+    <input type="number" id="student_age" name="student_age" ng-model="student.age" value="{{ student.age }}"><br>
+
+    <label for="student_photo">Photo:</label><br>
+    <input type="file" id="student_photo" name="student_photo" select-ng-files ng-model="student.photo" multiple>
+</form>
+
+<br/>
+
+<a href="" ng-click="saveStudent()">Save</a>&nbsp;<a href="#!students">Back</a>

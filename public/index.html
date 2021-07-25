@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>MyApp</title>
+
+      <meta charset="UTF-8"/>
+      <base href="/"/>
+      
+      <link rel="stylesheet" href="css/style.css"/>
+
+      <script src="libs/angular.min.js"></script>
+      <script src="libs/angular-route.min.js"></script>
+
+      <script src="controllers/profileCtrl.js"></script>
+      <script src="controllers/studentCtrl.js"></script>
+      <script src="controllers/studentsCtrl.js"></script>
+
+      <script src="services/translationsService.js"></script>
+      
+      <script src="appRouter.js"></script>
+   </head>
+   <body ng-app="myApp">
+      <div class="menu" ng-controller="MenuController">
+         <ul class="menu1">
+            <li><b>MyApp:</b></li>
+            <li><a href="#!students">Students</a></li>
+            <li><a href="#!profile">Profile</a></li>
+         </ul>
+         <ul class="menu2">
+            <li><a href="" ng-click="changeLocale('pt')">pt</a></li>
+            <li><a href="" ng-click="changeLocale('en')">en</a></li>
+            <li><a href="" ng-click="changeLocale('fr')">fr</a></li>
+         </ul>
+      </div>
+
+      <!-- ANGULAR DYNAMIC CONTENT -->
+      <ng-view></ng-view>
+   </body>
+</html>

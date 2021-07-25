@@ -1,0 +1,19 @@
+{
+  "name": "webapp-demo",
+  "version": "1.0.0",
+  "description": "This is a basic MEAN tutorial",
+  "main": "server.js",
+  "keywords": [
+    "MEAN",
+    "Mongo",
+    "Express",
+    "Angular",
+    "NodeJS"
+  ],
+  "author": "bgracio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3"
+  }
+}
